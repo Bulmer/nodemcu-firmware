@@ -1087,7 +1087,7 @@ T: Table returned by event.
  T.BSSID.."\n\treason: "..T.reason)
  end)
 
- wifi.eventmon.register(wifi.eventmon.STA_AUTHMODE_CHANGE, Function(T) 
+ wifi.eventmon.register(wifi.eventmon.STA_AUTHMODE_CHANGE, function(T) 
  print("\n\tSTA - AUTHMODE CHANGE".."\n\told_auth_mode: "..
  T.old_auth_mode.."\n\tnew_auth_mode: "..T.new_auth_mode) 
  end)
